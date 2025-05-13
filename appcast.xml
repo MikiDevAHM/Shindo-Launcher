@@ -6,10 +6,10 @@
     <description>Atualizações do launcher Shindo</description>
     <language>en-us</language>
     <item>
-      <title>1.0</title>
+      <title>1.1</title>
       <description>Melhorias e correções</description>
       <enclosure url="https://github.com/MikiDevAHM/Shindo-Launcher/releases/download/release/ShindoLauncherSetup.exe"
-                 sparkle:version="1.0"
+                 sparkle:version="1.1"
                  sparkle:os="windows"
                  length="51050822"
                  type="application/octet-stream" />
