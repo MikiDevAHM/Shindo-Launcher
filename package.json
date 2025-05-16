@@ -1,6 +1,6 @@
 {
   "name": "shindo-launcher",
-  "version": "1.0.2",
+  "version": "1.0.1",
   "author": "MikiDevAHM",
   "repository": "https://github.com/MikiDevAHM/Shindo-Launcher",
   "private": true,
@@ -14,22 +14,22 @@
     "postuninstall": "electron-builder install-app-deps",
     "publish": "electron-builder --publish always"
   },
-  "main": "src/background.js",
+  "main": "background.js",
   "dependencies": {
     "core-js": "^3.8.3",
+    "electron-updater": "^6.6.2",
     "vue": "^3.2.13"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.16",
+    "@babel/core": "^7.27.1",
     "@babel/eslint-parser": "^7.12.16",
+    "@babel/preset-env": "^7.27.2",
     "@vue/cli-plugin-babel": "~5.0.0",
     "@vue/cli-plugin-eslint": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
-    "dotenv-cli": "^8.0.0",
     "electron": "^13.6.9",
     "electron-builder": "^26.0.12",
     "electron-devtools-installer": "^3.1.0",
-    "electron-updater": "^6.6.2",
     "eslint": "^7.32.0",
     "eslint-plugin-vue": "^8.0.3",
     "vue-cli-plugin-electron-builder": "~2.1.1"

@@ -2,9 +2,9 @@
 
 import { app, protocol, BrowserWindow, ipcMain, dialog, shell } from 'electron'
 import path from 'path' // Adicionado
-const isDevelopment = process.env.NODE_ENV !== 'production'
+import { autoUpdater } from 'electron-updater' 
 
-const { autoUpdater } = require('electron-updater')
+const isDevelopment = process.env.NODE_ENV !== 'production'
 
 let mainWindow;
 // Scheme must be registered before the app is ready
@@ -53,8 +53,7 @@ app.on('activate', () => {
   // On macOS it's common to re-create a window in the app when the
   // dock icon is clicked and there are no other windows open.
   if (BrowserWindow.getAllWindows().length === 0) createWindow()
-})
-
+});
 // This method will be called when Electron has finished
 // initialization and is ready to create browser windows.
 // Some APIs can only be used after this event occurs.
@@ -62,7 +61,7 @@ app.on('ready', async () => {
 
   await createWindow()
   
-})
+});
 
   
 

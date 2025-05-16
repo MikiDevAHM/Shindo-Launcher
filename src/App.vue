@@ -67,16 +67,37 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
-
 body {
-  background-color: whitesmoke;
-  background-blend-mode: luminosity;
+  background: linear-gradient(135deg, #e0e7ff 0%, #f8fafc 100%);
+  min-height: 100vh;
+  margin: 0;
   overflow: hidden;
 }
 
+#app {
+  font-family: "Segoe UI", Avenir, Helvetica, Arial, sans-serif;
+  color: #22223b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 #logo {
-  width: 40%;
-  height: 40%;
+  width: 220px;
+  height: 220px;
+}
+
+.status-label,
+.launch-button {
+  width: 440px;
+  margin: 16px auto;
+  padding: 18px 0;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 4px 24px 0 rgba(31, 38, 135, 0.1);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 * {
