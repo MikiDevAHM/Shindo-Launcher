@@ -1,0 +1,23 @@
+appId: 'github.com/MikiDevAHM/Shindo-Launcher'
+productName: 'Shindo-Launcher'
+artifactName: ${name}-${version}-${os}-${arch}.${ext}
+
+directories:
+  output: ./dist
+
+files:
+  - dist_electron/**/*  # ou seu diretório real
+  - src/background.js       # se o arquivo estiver na raiz
+
+extraResources:
+  - from: ./public/updater.exe
+    to: updater.exe
+  - from: ./public/launcher.exe
+    to: launcher.exe
+
+publish: { provider: "github", publisherName: [MikiDevAHM] }
+win:
+  artifactName:  ${name}-${version}-windows-${arch}.${ext}
+  icon: ./public/favicon.ico
+  target:
+    - { target: nsis }
