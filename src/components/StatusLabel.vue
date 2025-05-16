@@ -6,19 +6,19 @@
 
 <script>
 export default {
-  name: 'StatusLabel',
+  name: "StatusLabel",
   props: {
     msg: {
       type: String,
-      required: true
-    }
-  }
-}
+      required: true,
+    },
+  },
+};
 </script>
 
 <style scoped>
 .status {
-  margin-top: 240px;
+  margin-top: 150px;
   text-align: center;
 }
 

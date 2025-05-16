@@ -9,16 +9,17 @@
 <script>
 export default {
   props: {
-    disabled: Boolean
-  }
-}
+    disabled: Boolean,
+  },
+};
 </script>
 
 <style>
 #launchbtn {
-  width: 50%;
-  height: 55px;
+  height: 70px;
+  width: 200px;
   cursor: pointer;
+  font-weight: bold;
   background-color: rgb(3, 107, 226);
   border-color: rgb(3, 107, 226);
   border-radius: 10px;
